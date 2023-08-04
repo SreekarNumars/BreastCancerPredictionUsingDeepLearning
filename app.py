@@ -13,7 +13,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 app = Flask(__name__,static_folder='Static')
 
 # Loading model to backend
-print("Checking backend Garbage Classifier Model")
+print("Checking breast cancer prediction Model")
 model_filename = (os.path.join(os.getcwd(),'model','cancer.h5'))
 print(model_filename)
 model = load_model(model_filename)
